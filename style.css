@@ -2,10 +2,34 @@ input[type="email"] {
     width: 500px;
 }
 .navbar {
-    position: fixed;
-    width: 51%;
-    z-index: 100;
+    top: 0;
+    position: sticky;
+    width: auto;
+    z-index: 5;
 }
-.navbar-nav li:hover {
-    background-color: rgba(129, 129, 129, 0.4);
+h5 svg {
+    color: rgb(255, 187, 0);
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgba(255, 255, 255, 0.856);
+}
+.navbar-nav .nav-item .nav-link {
+    color: rgb(0, 0, 0);
+}
+.modal-content {
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.3);
+}
+.modal-content .modal-body .form-floating input[type="password"] {
+    width: 500px;
+}
+.modal-content .modal-body .form-floating input[type="text"] {
+    width: 500px;
+}
+@media screen and (max-width: 762px) {
+    .modal-content .modal-body .form-floating input[type="password"] {
+        width: 400px;
+    }
+    .modal-content .modal-body .form-floating input[type="text"] {
+        width: 400px;
+    }
 }
